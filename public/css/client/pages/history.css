@@ -1,0 +1,76 @@
+.profile-info{
+    width: 100%;
+}
+.ho-so-ca-nhan h2{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    color: #425BA8;
+}
+.data-tabs ul li{
+    margin-top: 20px;
+    list-style: none;
+    
+}
+.data-tabs ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.tab-pane{
+    font-size: 16px;
+    color: #000;
+}
+.tab-content table{
+    margin-top: 10px;
+}
+.btn.btn-dark:hover{
+    color: #fff;
+}
+.img-center{
+    text-align: center;
+}
+.add-post{
+    display: none;
+}
+
+@media screen and (max-width:991px)and (min-width: 375px){
+    .profile-info{
+        margin-top: 50px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr ,.table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+       
+        position: relative;
+    }
+    .table td{
+        text-align: right;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+    .add-post{
+        display: block;
+    }
+   
+   }
+@media screen and (max-width:767px)and (min-width: 375px){
+    .profile-info{
+        margin-top: 50px;
+    }
+}

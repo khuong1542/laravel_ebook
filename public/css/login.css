@@ -1,0 +1,122 @@
+.container {
+    background: rgb(175, 193, 245);
+    background: linear-gradient(90deg, rgba(175, 193, 245, 1) 0%, rgba(245, 194, 155, 1) 100%);
+    min-height: 100vh;
+}
+
+.login {
+    width: 426px;
+    height: 490px;
+    background-image: url("../images/bg-login.svg"), url("../images/Book-bro.svg"), url("../images/bibliophile-bro.svg");
+    background-position: center, left top, bottom left;
+    background-repeat: no-repeat, repeat, repeat;
+    background-size: 100%, cover, cover;
+    font-family: "Nunito", sans-serif;
+    margin-top: 50px;
+}
+
+.login__content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.login__header {
+    /* background: var(--base-color2);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .25); */
+    font-size: 3.5rem;
+    font-family: "Nunito", sans-serif;
+    color: var(--white-color);
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px  rgba(0, 0, 0, .5);
+}
+
+.login__logo {
+    
+    margin-bottom:3rem;
+}
+.login__button{
+    margin-bottom: 1rem;
+}
+.login__logo-img {
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.25);
+    padding: 1rem;
+    width: 120px;
+    height: 120px;
+}
+
+.button--google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color2);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.button--google span{
+    font-size: 1.6rem;
+    color:var(--base-color);
+    font-weight: 700;
+}
+
+.button--google:hover {
+    background-color: var(--white-color);
+}
+
+.login__icon-google {
+    width: 25px;
+    height: 25px;
+    margin-right: 1.8rem;
+}
+.alert-wrap{
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    width: 75%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+.alert-message{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    /* color: #d00000; */
+    color: var(--black-secondary-color);
+    line-height: 1.4;
+    margin-bottom: .5rem;
+}
+.contact-link{
+    color: var(--base-color);
+}
+@media screen and (max-width:767px){
+    .login{
+        width: 320px;
+    }
+    .login__header{
+        font-size: 3rem;
+    }
+    .login__logo-img{
+        width: 100px;
+        height: 100px;
+    }
+    .login__icon-google{
+        margin-right: 0.8rem;
+
+    }
+    .button--google span{
+        font-size: 1.5rem;
+    }
+}
