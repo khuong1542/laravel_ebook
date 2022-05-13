@@ -17,11 +17,10 @@ class CreatePostCommentsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('post_id')->unsigned();
-            $table->integer('status')->default(0);
             $table->integer('parent_id')->unsigned()->nullable();
             $table->text('body');
-            $table->tinyInteger('status');
-            $table->date('deleted_at');
+            $table->tinyInteger('status')->default(0);
+            // $table->date('deleted_at');
             $table->timestamps();
             $table->softDeletes();
         });

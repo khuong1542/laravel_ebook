@@ -18,7 +18,7 @@ class CategorySeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        for($i =0 ;$i<10;$i++){
+        for($i =0 ;$i<50;$i++){
             $name = $faker->name;
             // $slug = str_slug($name, '-');
             $item = [
