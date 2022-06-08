@@ -18,10 +18,11 @@ class UpdateRatings extends Migration
             $table->id();
             $table->integer('rating');
             $table->integer('user_id');
-            $table->string('rateable_type');
+            $table->string('rateable_id');
+            $table->string('rateable_type')->nullable();
             $table->string('body')->nullable();
             $table->tinyInteger('status')->default(1);
-            $table->dateTime('deleted_at');
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
