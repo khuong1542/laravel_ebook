@@ -143,7 +143,7 @@ $config = array(
     | path from ftp_base_folder to base of thumbs folder with start and final /
     |---------------------------------------------------------------------------
     */
-    'ftp_thumbs_dir' => '/thumbs/',
+    'ftp_thumbs_dir' => '/uploads/',
     'ftp_ssl' => false,
     'ftp_port' => 21,
 
